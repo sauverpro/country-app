@@ -8,7 +8,7 @@ toggleModeButton.addEventListener("click", () => {
     darkMode = !darkMode;
     document.body.classList.toggle("dark-mode", darkMode);
     dark.classList.toggle("dark", darkMode);
-    document.body.style.color='white';
+    document.getElementsByClassName('country-detail-card').style.backgroundColor ='black';
 });
 const countryDetail = document.getElementById("countryDetail");
 let countryData = []
