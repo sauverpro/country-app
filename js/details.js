@@ -1,3 +1,15 @@
+const toggleModeButton = document.getElementById("toggleMode");
+const dark = document.getElementById("dark");
+const card = document.getElementsByClassName('country-card');
+
+let darkMode = false;
+
+toggleModeButton.addEventListener("click", () => {
+    darkMode = !darkMode;
+    document.body.classList.toggle("dark-mode", darkMode);
+    dark.classList.toggle("dark", darkMode);
+    document.body.style.color='white';
+});
 const countryDetail = document.getElementById("countryDetail");
 let countryData = []
 // Function to fetch detailed data for a specific country
