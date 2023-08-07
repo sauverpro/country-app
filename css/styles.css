@@ -93,7 +93,52 @@ header button:hover {
 .country-card:hover {
     transform: translateY(-5px);
 }
+/*  */
+/* Country detail card styles */
+.country-detail-card {
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 20px;
+    align-items: center;
+    margin: 20px;
+    display: inline-block;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+}
 
+.country-detail-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.country-detail-card p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Image within the country detail card */
+.country-detail-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+/* Media queries for responsiveness (you can adjust these as needed) */
+@media (min-width: 768px) {
+    .country-detail-card {
+        width: 60%;
+        margin: 20px auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .country-detail-card {
+        width: 40%;
+    }
+}
 /* Media queries for responsiveness */
 @media (min-width: 768px) {
     /* Adjust styles for tablets and larger screens */
